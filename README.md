@@ -29,15 +29,17 @@ Esse módulo permite que se escolha uma cor para cada status da loja, com isso f
 
 # Configuração
 
-## 1 Configure o modulo em ```Sistema > Estados Atuais de Pedidos```
-## 2 Crie ou edite um status;
-## 3 Clique no campo Admin color(HEX);
-## 4 Adicione um Hexadecimal para a cor ou clique que irá abrir o color picker selector para seleção da cor:
+### 1 Configure o modulo em ```Sistema > Estados Atuais de Pedidos```
+### 2 Crie ou edite um status;
+### 3 Clique no campo Admin color(HEX);
+### 4 Adicione um Hexadecimal para a cor ou clique que irá abrir o color picker selector para seleção da cor:
 
 #### Print 01
 ![image](http://f.cl.ly/items/1C1Z3t3z1j0A0h2Q1b3Q/Image%202015-10-04%20at%206.22.00%20PM.png)
 
-## 5 Pronto! Feito isso basta fazer nos demais status e visitar ```Vendas > Ordens``` que verá as cores dos pedidos por linha de acordo com o setado.
+### 5 Pronto! Feito isso basta fazer nos demais status e visitar ```Vendas > Ordens``` que verá as cores dos pedidos por linha de acordo com o setado.
+
+# Exemplo 2
 
 #### Exemplo 2.1
 ![image](http://f.cl.ly/items/2A1e39142X2s2v0m1q43/Image%202015-10-04%20at%205.43.54%20PM.png)
