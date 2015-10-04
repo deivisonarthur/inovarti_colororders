@@ -1,0 +1,49 @@
+<script type="text/javascript">
+
+// Pinta las filas de pedidos con los colores guardadds en bd
+    function colorToOrders() {
+
+        // variable con los valores de estado - color 
+        var colorsData = eval(<?php echo $this->getColorStatuses() ?>);
+
+        // recorremos los td de estado de pedido comprobando con el array cogido por ajax y asigamos colores
+
+
+        $$('#sales_order_grid_table td', '#inovarti_gridorder_grid_table td').each(function(element) {
+
+            var valueTd = element.innerHTML.strip().stripTags().replace(/\n/g, ' ').replace(/\s+/g, ' ');
+
+            // Si el valor del td está en el array le asignamos el color.
+            if (colorsData[valueTd]) {
+                var parentElement = element.up();
+
+                parentElement.setStyle({
+                    backgroundColor: '#' + colorsData[valueTd]
+                });
+            }
+        });
+
+        // En el select del filtro de estados de pedido, aplicamos tambien los colores correspondientes
+        $$('#sales_order_grid_filter_status option').each(function(element) {
+
+            var valueOption = element.innerHTML.strip().stripTags().replace(/\n/g, ' ').replace(/\s+/g, ' ');
+
+            // Si el valor del td está en el array le asignamos el color.
+            if (colorsData[valueOption]) {
+
+                // asignamos el color a la etiqueta <option>
+                element.setStyle({
+                    backgroundColor: '#' + colorsData[valueOption]
+                });
+            }
+        });
+    }
+
+    window.onload = function() {
+
+        // call para pintar filas de pedidos
+        if ($('sales_order_grid_table', 'inovarti_gridorder_grid_table')) {
+            colorToOrders();
+        }
+    }
+</script>

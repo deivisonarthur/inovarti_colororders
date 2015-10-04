@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<layout>
+		<adminhtml_sales_order_index>
+			<reference name="head">
+				<block type="colororders/adminhtml_block_grid" name="head.colororders" template="colororders/sales/orders/grid.phtml" output="toHtml"></block>
+				<action method="removeItem"><type>skin_js</type><name>mage/adminhtml/grid.js</name></action>
+				<action method="addItem"><type>skin_js</type><name>colororders/js/grid.js</name></action>
+			</reference>
+		</adminhtml_sales_order_index>
+                <adminhtml_sales_gridorder_index>
+			<reference name="head">
+				<block type="colororders/adminhtml_block_grid" name="head.colororders" template="colororders/sales/orders/grid.phtml" output="toHtml"></block>
+				<action method="removeItem"><type>skin_js</type><name>mage/adminhtml/grid.js</name></action>
+				<action method="addItem"><type>skin_js</type><name>colororders/js/grid.js</name></action>
+			</reference>
+		</adminhtml_sales_gridorder_index>
+		<adminhtml_sales_order_status_new>
+			<reference name="head">
+				<action method="addItem"><type>skin_js</type><name>colororders/js/yahoo.color.js</name></action>
+				<action method="addItem"><type>skin_js</type><name>colororders/js/colorPicker.js</name></action>
+				<action method="addCss"><file>colororders/css/colorPicker.css</file></action>
+				<action method="addItem"><type>skin_js</type><file>colororders/js/scriptColorPicker.js</file></action>
+			</reference>
+		</adminhtml_sales_order_status_new>
+		<adminhtml_sales_order_status_edit>
+			<reference name="head">
+				<action method="addItem"><type>skin_js</type><name>colororders/js/yahoo.color.js</name></action>
+				<action method="addItem"><type>skin_js</type><name>colororders/js/colorPicker.js</name></action>
+				<action method="addCss"><file>colororders/css/colorPicker.css</file></action>
+				<action method="addItem"><type>skin_js</type><file>colororders/js/scriptColorPicker.js</file></action>
+			</reference>
+		</adminhtml_sales_order_status_edit>
+</layout>

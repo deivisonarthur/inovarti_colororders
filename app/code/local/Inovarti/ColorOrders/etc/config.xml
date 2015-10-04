@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Inovarti_ColorOrders Module for Magento
+ *
+ * @category   Inovarti
+ * @package    Inovarti_ColorOrders
+ * @version    0.2.1
+ */
+-->
+<config>
+    <modules>
+        <Inovarti_ColorOrders>
+            <version>0.2.1</version>
+        </Inovarti_ColorOrders>
+    </modules>
+	<global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <sales_order_status_new_form>Inovarti_ColorOrders_Block_Adminhtml_Block_Widget_New</sales_order_status_new_form>
+                </rewrite>
+                 <rewrite>
+                    <sales_order_status_edit_form>Inovarti_ColorOrders_Block_Adminhtml_Block_Widget_Edit</sales_order_status_edit_form>
+                </rewrite>
+            </adminhtml>
+            <colororders>
+                <class>Inovarti_ColorOrders_Block</class>
+            </colororders>
+        </blocks>
+        <resources>
+            <colororders_setup>
+                <setup>
+                    <module>Inovarti_ColorOrders</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </colororders_setup>
+            <colororders_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </colororders_write>
+            <colororders_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </colororders_read>
+        </resources>
+    </global>
+    <adminhtml>
+         <layout>
+            <updates>
+                <colororders>
+                    <file>colororders.xml</file>
+                </colororders>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>
