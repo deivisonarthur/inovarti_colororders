@@ -5,7 +5,7 @@ Módulo Magento que permite colocar uma cor para cada status do grid de ordens
 Esse módulo permite que se escolha uma cor para cada status da loja, com isso facilita a visualização da administração das ordens de maneiro muito mais eficiente.
 
 ## Print Screen
-![image](http://f.cl.ly/items/1e2P1H0k3Y1r3M0T2P0r/Image%202015-10-04%20at%205.41.32%20PM.png)
+![image](http://f.cl.ly/items/3X2z2q3M0i2l2j0A0F30/Image%202015-10-04%20at%205.45.12%20PM.png)
 
 ## Instalação do módulo
 
@@ -40,7 +40,7 @@ Esse módulo permite que se escolha uma cor para cada status da loja, com isso f
 ## 5 Pronto! Feito isso basta fazer nos demais status e visitar ```Vendas > Ordens``` que verá as cores dos pedidos por linha de acordo com o setado.
 
 #### Exemplo 2.1
-![image](http://f.cl.ly/items/1e2P1H0k3Y1r3M0T2P0r/Image%202015-10-04%20at%205.41.32%20PM.png)
+![image](http://f.cl.ly/items/2A1e39142X2s2v0m1q43/Image%202015-10-04%20at%205.43.54%20PM.png)
 
 #### Exemplo 2.2
 ![image](http://f.cl.ly/items/1e2P1H0k3Y1r3M0T2P0r/Image%202015-10-04%20at%205.41.32%20PM.png)
